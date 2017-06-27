@@ -1,0 +1,36 @@
+body {
+	text-align: center;
+	background-color: rgb(80,70,70);
+}
+
+img {
+	height: 350px;
+	padding: 15px;
+	max-width: 700px;
+	/*condenses the width of the image */
+	background-color: rgb(69, 145, 102);
+}
+h1 {
+	font-size: 50px;
+	color: rgb(211,14,14);
+	font-family: Impact, Helvetica, sans-serif;
+	text-decoration: underline;
+	text-shadow:
+	-1px -1px 0 #ffffff,
+	1px -1px 0 #ffffff,
+	-1px 1px 0 #ffffff,
+	1px 1px 0 #ffffff;
+}
+
+h3 {color:darkblue;}
+   { background:#eee;}
+   { margin:0; padding:0;}
+
+h3 a { text-decoration:none;}
+			ul { margin:0; padding:0; list-style:none; color:#959595;}
+			ul li { margin:0;}
+			ul li { padding:4px 0; width:185px;}
+
+table {
+	
+}
