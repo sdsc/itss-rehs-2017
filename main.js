@@ -1,59 +1,121 @@
 /*
-$(document).ready(function() {
-  $.getJSON( "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=1498583446.605&target=hosts.SDSC_CI.ham_sdsc_edu.Inlet_Temp_04h&from=10%3A00_20170627&until=10%3A15_20170627&format=json",
-    function( data ) {  
-      console.log( data );
-      });
-     //});
-//});
+function getColor(graphiteData, onComplete) {
+  var color = "blue"
+  /*$.getJSON( graphiteData, function( data ) {  
+    console.log( data );
+  
+    var a = data[0]
+    var b = a["datapoints"]
+    var c = b[0]
+    var celciusTemp = c[0]
+    console.log("Current Temperature in Celcius: " + celciusTemp);
+    function toFahrenheit(celciusTemp)  {
+      return (9/5) * (celciusTemp+32);
+    }
+    console.log("Current Temperature in Fahrenheit: " + toFahrenheit(celciusTemp));
 
-  var a = data[0]
-  var b = a["datapoints"]
-  var c = b[0]
-  var celciusTemp = c[0]
-  console.log("Current Temperature in Celcius: " + celciusTemp)
-  //this is the temp in Celcius!!
-
-var fareinheightTemp = celciusTemp*(9/5) + 32
-console.log("Current Temperature in Fareinheight: " + fareinheightTemp)
-//this is not needed, just for reference
-
-var greenNblue = Math.floor(255-((255/33.5)*(celciusTemp-15.5)))
-
-if (celciusTemp >= 49) {
-  var greenNblue = 0;
-} else if (celciusTemp <= 15.5) {
-    var greenNblue = 255;
-} else {
-    greenNblue;
+    var greenNblue = Math.floor(255-((255/33.5)*(celciusTemp-15.5)))
+    if (celciusTemp >= 49) {
+      var greenNblue = 0;
+    } else if (celciusTemp <= 15.5) {
+      var greenNblue = 255;
+    } else {
+      greenNblue;
+    }
+    console.log("gb value: " + greenNblue)
+    console.log("rgb(255," + greenNblue + "," + greenNblue + ")")
+    onComplete(color);
+    //return "rgb(255," + greenNblue + "," + greenNblue + ")"
+  });
+  // end //
 }
-console.log("gb value: " + greenNblue)
-console.log("rgb(255," + greenNblue + "," + greenNblue + ")")
+getColor(graphiteData, function(color) {
+  console.log(color);
 
 
-$("#HAM").css("color", ("rgb(255," + greenNblue + "," + greenNblue + ")"));
+});
+
+var graphiteData = "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=1499363402.318&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&format=json"
+console.log(getColor(graphiteData))
+
+
+
+$(document).ready(function() {
+
+  var graphite = "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=1499363402.318&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&format=json"
+  var graphite = "https://graphite.sdsc.edu/render/?width=1151&height=604&_salt=1499361367.469&target=hosts.SDSC_CI.dough_sdsc_edu.Inlet_Temp_04h&from=-24hours&format=json"
+    
+    
+  
+    $("table").hide();
+    $("p").hide();
+
+    
     });
+  $("img").click(function(){
+  $("p").fadeIn(1000);
+  $("table").fadeIn(1000);
 });
 
 
+//$("#HAM").css("color", ("rgb(255," + greenNblue + "," + greenNblue + ")"));
 
-
-
-$("table").hide();
-$("p").hide();
-
-
-$("img").click(function(){
-    $("p").fadeIn(1000);
-    $("table").fadeIn(1000);
-});
 */
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//In case the JavaScript gets totally screwed up...
+
+/*
 $(document).ready(function() {
-var graphite = "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=1499363402.318&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&format=json"
+
+  var graphite = "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=1499363402.318&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&format=json"
 
   $.getJSON( graphite,
     function( data ) {  
@@ -63,6 +125,13 @@ var graphite = "https://graphite.sdsc.edu/render/?width=586&height=309&_salt=149
   var c = b[0]
   var celciusTemp = c[0]
   console.log("Current Temperature in Celcius: " + celciusTemp)
+  
+  function toFahrenheit(celciusTemp)  {
+  return (9/5) * (celciusTemp+32);
+  }
+  console.log("Current Temperature in Fahrenheit: " + toFahrenheit(celciusTemp))
+  //console.log(toFahrenheit)
+  var fahrenheitTemp = toFahrenheit()
 
   var greenNblue = Math.floor(255-((255/33.5)*(celciusTemp-15.5)))
 
@@ -90,66 +159,7 @@ $("img").click(function(){
     $("p").fadeIn(1000);
     $("table").fadeIn(1000);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
