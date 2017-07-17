@@ -13,6 +13,11 @@
 }
 
 
+td:hover {
+  background-color: #fff600;
+  color: #000000;
+   -webkit-filter: grayscale(100%);
+
 
 /* ==========================================================================
     Global Style starts here
