@@ -32,13 +32,18 @@ $(document).ready(function() {
    doWork("xigua");
    doWork("yolk");
    doWork("zucchini");
+
+   //add any graphite graph here, make sure it is tagged in a cell in the HTML as well. It also must be saved in graphite under Metrics>Hosts>SDSC_CI
  },5000);
 
 
   $("table").hide();
   $("p").hide();
   $("img").click(function(){
-    $("p").fadeIn(1000);
-    $("table").fadeIn(1000);
+    $("p").fadeToggle(1000);
+    $("table").fadeToggle(1000);
+  });
+  $("#logo").click(function(){
+    window.open("http://www.sdsc.edu");
   });
 });
