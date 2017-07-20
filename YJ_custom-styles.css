@@ -1,30 +1,16 @@
 @font-face {
-  
     font-family: Arial;
-    src: url(sourcesanspro-black-webfont.ttf);
- 
-    font-weight: bold;
-    font-style: bold;
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 
 
-
-
-td:hover {
-  background-color: #fff600;
-  color: #000000;
-   -webkit-filter: grayscale(100%); }
-
-td: {text-align:center; 
-
-
-
-}
-
-
-	body{ background: url(https://github.com/sdsc/itss-rehs-2017/blob/master/html-background-image-HD1-1.jpg?raw=true) repeat; margin-top: 100px;  margin-bottom: 50px;  color: #9d9d9d;}
+/* ==========================================================================
+    Global Style starts here
+   ========================================================================== */
+	body{ background: url(http://zdnet4.cbsistatic.com/hub/i/2016/05/24/4b42a04e-d09e-4bf1-ba64-a94be5ad6c51/629e27ba9425a9e19dabd3177e927cde/sddc-background.jpg) repeat; margin-top: 0px;  margin-bottom: 50px;  color: #9d9d9d;}
 	h1, h2, h3, h4, h5, h6{margin: 0;}
 	h1{font-size: 24px; line-height: 30px; color: #716a72; }
 	h2{font-size: }
@@ -34,10 +20,21 @@ td: {text-align:center;
 	h6{}
 	p{font-size: 15px; color: #9d9d9d; line-height: 24px; padding-bottom: 25px; font-family: 'source_sans_proregular'; margin-bottom: 0;}
 	
+  td:hover {
+    background-color:#fff600;
+    color:#000000;
+      /*
+      -webkit-filter:grayscale(100%);
+      */
+  }
  
-	.site-header{text-align: center; padding-top: 65px; background: #fafafa; border-radius: 3px 3px 0 0;}
+
+/* ==========================================================================
+    Menu styles stars here
+   ========================================================================== */
+	.site-header{text-align: center; padding-top: 25px; background: #fafafa; border-radius: 3px 3px 0 0;}
 	.logo{display: inline-block;}
-	.logo h1{font-size: 50px; line-height: 52px; color: #716a72; text-transform: uppercase; border-bottom: 1px solid #eaeaea;
+	.logo h1{font-size: 50px; line-height: 0px; color: #716a72; text-transform: uppercase; border-bottom: 1px solid #eaeaea;
 			 padding-bottom: 10px;  font-family: 'source_sans_problack'; letter-spacing: 7px;}
 	
 
@@ -47,13 +44,40 @@ right: 30px;
 left: auto;
 }
 
+
+/* ==========================================================================
+    General styles stars here
+   ========================================================================== */
 	
-	.tabs{background: #fafafa; padding: 55px 30px;}
+	
+	.tabs{background: #fafafa; padding: 5px 3px;}
   .tabs .ruler-bottom{border-bottom: none;}
     
+/* ==========================================================================
+    Footer styles stars here
+   ========================================================================== */
+
+
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
  
 .bw:hover {
   -webkit-filter: grayscale(100%);
 }
-
+.container {
+ color: #ffffff;
+ text-shadow:
+ -1px -1px 0 #000,
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
+}
+.p {
+  color: #ffffff;
+  })
 

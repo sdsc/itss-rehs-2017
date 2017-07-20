@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="YJ_bootstrap.css">
       
         <link rel="stylesheet" href="YJ_custom-styles.css">
-
-
         
         
 
@@ -19,11 +17,7 @@
             <div class="container">
                 <div class="site-header">
                     <div class="logo">
-                        <h1 style="font-family: Arial;font-size:40px; font-style:bold">SDSC Rack Temperatures</h1>
-                        
-                    
-                    
-                    
+                        <h1 style=“font-family: Arial;font-size:40px; font-style:bold”>Rack Temperatures</h1>
                
                 </div>
             </div>
@@ -33,7 +27,9 @@
                                     <!-- Carousel items -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="https://github.com/sdsc/itss-rehs-2017/blob/master/Screen%20Shot%202017-06-27%20at%2011.06.50%20AM.png?raw=true" alt="" class="bw">
+                                <img id="logo" src="http://www.sdsc.edu/assets/images/logos/sdsclogo-plusname-horiz-red.jpg">
+
+                                <img id="map" src="https://github.com/sdsc/itss-rehs-2017/blob/master/Screen%20Shot%202017-06-27%20at%2011.06.50%20AM.png?raw=true" alt="" class="bw">
                                   
                                 </div>
                             </div>
@@ -45,15 +41,12 @@
                 </div>
             </div>
            
-            
           
             <div class="container">
-                <div class="tabs">
-                    <table>
-
-    <tr> 
-
-        <th>   </th>
+                <table>
+                    <p id="row77">Row 77</p>
+    <tr>
+        <th>    </th>
         <th>HH77</th>
         <th>GG77</th>
         <th>FF77</th>
@@ -133,7 +126,7 @@
         <td></td>   
     </tr>
 
-    <tr title="HAM">
+     <tr title="HAM">
         <td>46</td>
         <td></td>
         <td></td>
@@ -151,7 +144,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td id="ham"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316040.583&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh>HAM.SDSC.EDU</a></td>
+        <td><button id="ham"> <a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316040.583&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh" target="_blank">Ham</a></button></td>
         <td></td>
         <td></td>
         <td></td>
@@ -178,7 +171,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td id="dough"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316158.145&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh>DOUGH.SDSC.EDU</a> </td>
+        <td><button id="dough"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316158.145&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh" target="_blank">Dough</a></button></td>
         <td></td>
         <td></td>
         <td></td>
@@ -205,7 +198,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td id="xigua"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316389.352&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.yolk_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh> XIGUA.SDSC.EDU</a></td>
+        <td><button id="xigua"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316389.352&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.yolk_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh" target="_blank">Xigua</a></button></td>
         <td></td>
         <td></td>
         <td></td>
@@ -232,7 +225,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td id="yolk"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316453.219&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h>YOLK.SDSC.EDU</a></td>
+        <td><button id="yolk"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316453.219&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h" target="_blank">Yolk</a></button></td>
         <td></td>
         <td></td>
         <td></td>
@@ -259,7 +252,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td id="zucchini"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316475.779&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h&target=hosts.SDSC_CI.zucchini_sdsc_edu.Temp_0Eh>ZUCCHINI.SDSC.EDU<a/></td>
+        <td><button id="zucchini"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316475.779&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h&target=hosts.SDSC_CI.zucchini_sdsc_edu.Temp_0Eh" target="_blank">Zucchini<a/></button></td>
         <td></td>
         <td></td>
         <td></td>
@@ -267,7 +260,6 @@
         <td></td>
         <td></td>
     </tr>
-
     <tr>
         <td>41</td>
         <td></td>
@@ -1335,16 +1327,16 @@
         <td></td>
     </tr>
 </table>
-                    
-                            
-                            </div>
                         </div>
                       </div>
 
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-   
+    <!--
+    <script src='js/main.js'></script>
+    <script src='js/short-term.js'></script>
+    -->
     <script src='perfect.js'></script>
-   
+    <!--don't mess with these-->
 
     </body>
 </html>
