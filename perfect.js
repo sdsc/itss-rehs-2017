@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  function doWork(name) {
-    var website = "https://graphite.sdsc.edu/render/?width=973&height=554&_salt=1499984669.489&target=hosts.SDSC_CI." + name + "_sdsc_edu.Temp_0Eh&from=-1minutes&format=json";
+  function doWork(location, name) {
+    var website = "https://graphite.sdsc.edu/render/?width=973&height=554&_salt=1499984669.489&target=" + location + "_sdsc_edu.Temp_0Eh&from=-1minutes&format=json";
     var poundName = ("\#" + name );
     $.getJSON( website,
         function( data ) {  
@@ -27,20 +27,21 @@ $(document).ready(function() {
   }
 
  setInterval(function(){
-   doWork("ham");
-   doWork("dough");
-   doWork("xigua");
-   doWork("yolk");
-   doWork("zucchini");
+   //put the location on graphite in dot notation, and the specific name (again)
+    doWork("hosts.SDSC_CI.ham", "ham")
+    doWork("hosts.SDSC_CI.dough", "dough");
+    doWork("hosts.SDSC_CI.xigua", "xigua");
+    doWork("hosts.SDSC_CI.yolk", "yolk");
+    doWork("hosts.SDSC_CI.zucchini", "zucchini");
 
-   //add any graphite graph here, make sure it is tagged in a cell in the HTML as well. It also must be saved in graphite under Metrics>Hosts>SDSC_CI
+    //add any graphite graph here, make sure it is tagged in a cell in the HTML as well.
  },5000);
 
 
   $("table").hide();
-  $("p").hide();
-  $("img").click(function(){
-    $("p").fadeToggle(1000);
+  $("#row77title").hide();
+  $("#row77").click(function(){
+    $("#row77title").fadeToggle(1000);
     $("table").fadeToggle(1000);
   });
   $("#logo").click(function(){

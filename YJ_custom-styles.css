@@ -4,14 +4,35 @@
     font-style: normal;
 
 }
-
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#map {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#row77 {
+  position: absolute;
+  top: 109px;
+  right: 124px;
+  width: 42px;
+  height: 242px;
+}
 
 
 /* ==========================================================================
     Global Style starts here
    ========================================================================== */
-	body{ background: url(http://zdnet4.cbsistatic.com/hub/i/2016/05/24/4b42a04e-d09e-4bf1-ba64-a94be5ad6c51/629e27ba9425a9e19dabd3177e927cde/sddc-background.jpg) repeat; margin-top: 0px;  margin-bottom: 50px;  color: #9d9d9d;}
-	h1, h2, h3, h4, h5, h6{margin: 0;}
+	body{ background: url(http://zdnet4.cbsistatic.com/hub/i/2016/05/24/4b42a04e-d09e-4bf1-ba64-a94be5ad6c51/629e27ba9425a9e19dabd3177e927cde/sddc-background.jpg) repeat;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-bottom: 20px;  
+        }
+	h1, h2, h3, h4, h5, h6{margin: 10px;}
 	h1{font-size: 24px; line-height: 30px; color: #716a72; }
 	h2{font-size: }
 	h3{}
@@ -27,7 +48,9 @@
       -webkit-filter:grayscale(100%);
       */
   }
- 
+  td {
+    text-align: center;
+  }
 
 /* ==========================================================================
     Menu styles stars here
@@ -69,15 +92,18 @@ left: auto;
 .bw:hover {
   -webkit-filter: grayscale(100%);
 }
-.container {
+.tableContainer {
  color: #ffffff;
  text-shadow:
  -1px -1px 0 #000,
  1px -1px 0 #000,
  -1px 1px 0 #000,
  1px 1px 0 #000;
+ margin-left: auto;
+ margin-right: auto;
 }
-.p {
-  color: #ffffff;
-  })
-
+#row77title {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+}
