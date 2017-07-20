@@ -13,40 +13,30 @@
 
     </head>
     <body>
-    
-            <div class="container">
-                <div class="site-header">
-                    <div class="logo">
-                        <h1 style=“font-family: Arial;font-size:40px; font-style:bold”>SDSC Rack Temperatures</h1>
-                    
-                    
-                    
-               
+        <div class="container">
+            <div class="site-header">
+                <div class="logo">
+                    <h1 style="font-family: Arial;font-size:40px; font-style:bold">Rack Temperatures
+                    </h1>
                 </div>
             </div>
-            <div class="container">
+        <div class="container">
                 <div class="banner">
                     <div class="carousel slide" id="myCarousel">
-                                    <!-- Carousel items -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="https://github.com/sdsc/itss-rehs-2017/blob/master/Screen%20Shot%202017-06-27%20at%2011.06.50%20AM.png?raw=true" alt="" class="bw">
-                                  
-                                </div>
-                            </div>
-                            
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-           
+                                <img id="logo" src="http://www.sdsc.edu/assets/images/logos/sdsclogo-plusname-horiz-red.jpg">
+                                <div class="parent">
+                                    <img id="map" src="https://github.com/sdsc/itss-rehs-2017/blob/master/Screen%20Shot%202017-06-27%20at%2011.06.50%20AM.png?raw=true" alt="">
+                                    <img id="row77" src="https://github.com/sdsc/itss-rehs-2017/blob/master/Translucent%20Row%2077.png?raw=true" alt="" class="bw">
+            <div class="tableContainer">
+                <table>
+                    <h3 id="row77title">Row 77</h3>
             
           
             <div class="container">
-                <div class="tabs">
-                    <table>
+                <table>
+                    <p id="row77">Row 77</p>
     <tr>
         <th>    </th>
         <th>HH77</th>
@@ -146,7 +136,7 @@
         <td></td>
         <td></td>
         <td class="testR">R</td>
-        <td id="ham"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316040.583&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh>HAM.SDSC.EDU</a></td>
+        <td><button id="ham"> <a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316040.583&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh" target="_blank">Ham</a></button></td>
         <td class="testY">P</td>
         <td class="testAA">O</td>
         <td class="testO">N</td>
@@ -173,7 +163,7 @@
         <td></td>
         <td></td>
         <td class="testM">R</td>
-        <td id="dough"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316158.145&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh>DOUGH.SDSC.EDU</a> </td>
+        <td><button id="dough"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316158.145&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh" target="_blank">Dough</a></button></td>
         <td class="testBB">P</td>
         <td class="testCC">O</td>
         <td class="testN">N</td>
@@ -200,7 +190,7 @@
         <td></td>
         <td></td>
         <td class="testO">R</td>
-        <td id="xigua"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316389.352&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.yolk_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh> XIGUA.SDSC.EDU</a></td>
+        <td><button id="xigua"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316389.352&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.yolk_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh" target="_blank">Xigua</a></button></td>
         <td class="testR">P</td>
         <td class="testGG">O</td>
         <td class="testCC">N</td>
@@ -227,7 +217,7 @@
         <td></td>
         <td></td>
         <td class="testGG">R</td>
-        <td id="yolk"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316453.219&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h>YOLK.SDSC.EDU</a></td>
+        <td><button id="yolk"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316453.219&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h" target="_blank">Yolk</a></button></td>
         <td class="testU">P</td>
         <td class="testEE">O</td>
         <td class="testCC">N</td>
@@ -254,7 +244,7 @@
         <td></td>
         <td></td>
         <td class="testGG">R</td>
-        <td id="zucchini"><a href=https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316475.779&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h&target=hosts.SDSC_CI.zucchini_sdsc_edu.Temp_0Eh>ZUCCHINI.SDSC.EDU<a/></td>
+        <td><button id="zucchini"><a href="https://graphite.sdsc.edu/render/?width=586&height=308&_salt=1500316475.779&target=hosts.SDSC_CI.ham_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.dough_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Fan7B_RPM_3Dh&target=hosts.SDSC_CI.xigua_sdsc_edu.Temp_0Eh&target=hosts.SDSC_CI.yolk_sdsc_edu.Inlet_Temp_04h&target=hosts.SDSC_CI.zucchini_sdsc_edu.Temp_0Eh" target="_blank">Zucchini<a/></button></td>
         <td class="testHH">P</td>
         <td class="testZ">O</td>
         <td class="testX">N</td>
@@ -1329,9 +1319,6 @@
         <td class="testY">K</td>
     </tr>
 </table>
-                    
-                            
-                            </div>
                         </div>
                       </div>
 
